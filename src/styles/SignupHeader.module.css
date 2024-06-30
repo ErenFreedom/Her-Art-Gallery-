@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Add custom font */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white; /* Set the background color to white */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%; /* Ensure the header spans the full width */
+  z-index: 1000;
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.logo {
+  font-family: 'Pacifico', cursive; /* Apply custom font */
+  font-size: 2rem; /* Adjust the font size */
+  color: #800080; /* Set the color to purple */
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the nav items */
+  flex-grow: 1; /* Allow the nav to grow and take up available space */
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: 500;
+  margin: 0 2rem; /* Increase the margin */
+  position: relative;
+  font-family: 'Pacifico', cursive; /* Apply the custom font */
+  color: #800080; /* Purple color for the links */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover {
+  color: #d81b60; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #d81b60;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav a.active::after,
+.nav a:hover::after {
+  transform: scaleX(1);
+}

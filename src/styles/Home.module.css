@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: calc(100vh - 80px); /* Adjust height to account for header */
+    width: 100%;
+    overflow: hidden; /* Ensure no overflow */
+  }
+  
+  .imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Match the height of the main container */
+  }
+  
+  .imageWrapper {
+    width: 95vw; /* Make sure the image wrapper takes 95% of the viewport width */
+    height: calc(100vh - 80px); /* Make sure the image wrapper takes the full height excluding the header */
+  }
+  
+  .mainImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the image fits within the container */
+  }
+  

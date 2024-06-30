@@ -1,0 +1,66 @@
+.dashboardContainer {
+  padding: 16px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.artGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.loader {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.topControls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.filterContainer {
+  position: relative;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.filterButton {
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Pacifico', cursive;
+}
+
+.dropdownMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 5px;
+}
+
+.dropdownMenu button {
+  background-color: white;
+  color: #333;
+  padding: 10px 20px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-family: 'Pacifico', cursive;
+}
+
+.dropdownMenu button:hover {
+  background-color: #f1f1f1;
+}

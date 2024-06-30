@@ -1,0 +1,126 @@
+/* src/styles/Signup.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500&display=swap');
+
+.signupBody {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: white; /* Ensure background is white */
+}
+
+.formContainer {
+  width: 50%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center align items horizontally */
+}
+
+.formContainer h1 {
+  font-family: 'Pacifico', cursive; /* Apply custom font */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center; /* Center align text */
+  color: #9F2B68; /* Purple girly color */
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  width: 60%; /* Reduce width for better appearance */
+  align-items: center; /* Center align form elements */
+}
+
+.formContainer input {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 100%; /* Ensure full width within form container */
+  font-family: 'Poppins', sans-serif; /* Apply modern font */
+}
+
+.formContainer button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #9F2B68 0%, #5B42F3 100%); /* Updated purple girly gradient */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 50%; /* Ensure button is narrower */
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Apply modern font */
+}
+
+.formContainer .divider {
+  margin: 1rem 0;
+  text-align: center;
+  position: relative;
+  width: 80%; /* Reduce width for better appearance */
+}
+
+.formContainer .divider::before,
+.formContainer .divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ccc;
+}
+
+.formContainer .divider::before {
+  left: 0;
+}
+
+.formContainer .divider::after {
+  right: 0;
+}
+
+.googleButton {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: white;
+  color: #4285f4;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  width: 100%; /* Ensure full width within form container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif; /* Apply modern font */
+}
+
+.googleButton .googleIcon {
+  margin-right: 8px;
+  margin-top: -2px; /* Adjust icon position */
+}
+
+.imageContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem; /* Add margin to the right side */
+  position: relative;
+}
+
+.signInText {
+  font-family: 'Pacifico', cursive; /* Apply custom font */
+  font-size: 1.2rem; /* Make text a little bigger */
+  color: #9F2B68; /* Purple girly color */
+  text-align: center;
+}
