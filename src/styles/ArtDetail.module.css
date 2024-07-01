@@ -1,0 +1,107 @@
+/* src/styles/ArtDetail.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.container {
+  display: flex;
+  padding: 16px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.imageContainer {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.detailsContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsContainer h1 {
+  font-family: 'Pacifico', cursive;
+  color: #ff69b4;
+}
+
+.detailsContainer p {
+  font-family: 'Pacifico', cursive;
+  color: #db7093;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  color: #ff69b4;
+  font-size: 1rem;
+  margin-right: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.iconButton:hover {
+  color: #ff1493;
+}
+
+.iconButton svg {
+  margin-right: 4px;
+}
+
+.views {
+  display: flex;
+  align-items: center;
+  color: #db7093;
+  font-family: 'Pacifico', cursive;
+}
+
+.views svg {
+  margin-right: 4px;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comments h2 {
+  font-family: 'Pacifico', cursive;
+  color: #ff69b4;
+}
+
+.commentInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ff69b4;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: 'Pacifico', cursive;
+}
+
+.commentButton {
+  margin-top: 10px;
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Pacifico', cursive;
+}
+
+.commentButton:hover {
+  background-color: #ff1493;
+}

@@ -1,6 +1,7 @@
 // src/pages/dashboard.jsx
 import React, { useState, useEffect } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { useRouter } from 'next/router';
 import Header from '../components/Header';
 import styles from '../styles/Dashboard.module.css';
 import ArtCard from '../components/ArtCard';
@@ -12,6 +13,7 @@ const Dashboard = () => {
   const [filter, setFilter] = useState('all');
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
     fetchArts(filter, 1);
@@ -33,6 +35,13 @@ const Dashboard = () => {
     fetchArts(filter, nextPage);
   };
 
+  const handleCardClick = (art) => {
+    router.push({
+      pathname: '/art/[id]',
+      query: { id: art._id },
+    });
+  };
+
   return (
     <>
       <Header hideAuthLinks={false} showSlider={true} />
@@ -48,7 +57,7 @@ const Dashboard = () => {
           className={styles.artGrid}
         >
           {arts.map((art, index) => (
-            <ArtCard key={art._id} art={art} index={index} />
+            <ArtCard key={art._id} art={art} index={index} onClick={() => handleCardClick(art)} />
           ))}
         </InfiniteScroll>
       </div>

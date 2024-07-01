@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Pacifico', cursive;
+  color: #ff69b4;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.maintenanceImage img {
+  width: 50%;
+  margin: 2rem 0;
+}
