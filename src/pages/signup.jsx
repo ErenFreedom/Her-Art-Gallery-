@@ -1,5 +1,3 @@
-// src/pages/signup.jsx
-
 import { useState, useEffect } from 'react';
 import { signIn } from 'next-auth/react';
 import { FcGoogle } from 'react-icons/fc';
@@ -30,9 +28,9 @@ const Signup = () => {
     e.preventDefault();
     try {
       const res = await axios.post('/api/auth/register', formData);
-      toast.success('Registered successfully');
+      toast.success('Registered successfully. Please check your email to verify your account.');
       setTimeout(() => {
-        router.push('/login');
+        router.push('/verify-email');
       }, 2000);
     } catch (error) {
       toast.error(error.response.data.message);
@@ -44,7 +42,7 @@ const Signup = () => {
       <SignupHeader />
       <div className={styles.container}>
         <div className={styles.formContainer}>
-          <h1>Sign Up to Arte di Anna</h1>
+          <h1 className={styles.header}>Sign Up to Arte di Anna</h1>
           <form onSubmit={handleSubmit}>
             <input
               type="text"

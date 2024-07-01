@@ -1,11 +1,13 @@
 // src/components/Header.jsx
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useSession, signOut } from 'next-auth/react';
 import styles from '../styles/Header.module.css';
 
 const Header = ({ hideAuthLinks, showSlider }) => {
   const router = useRouter();
-  const isLoggedIn = false; // Replace with actual login status
+  const { data: session, status } = useSession();
+  const isLoggedIn = status === 'authenticated';
 
   return (
     <>
@@ -18,11 +20,13 @@ const Header = ({ hideAuthLinks, showSlider }) => {
           <Link href="/about" className={router.pathname === '/about' ? styles.active : ''}>About</Link>
           <Link href="/contact" className={router.pathname === '/contact' ? styles.active : ''}>Contact</Link>
         </nav>
-        {!isLoggedIn && (
+        {!isLoggedIn ? (
           <div className={styles.authLinks}>
             <Link href="/login" className={styles.button27}>Login</Link>
             <Link href="/signup" className={styles.button27}>Signup</Link>
           </div>
+        ) : (
+          <button onClick={() => signOut()} className={styles.button27}>Logout</button>
         )}
       </header>
       {showSlider && (

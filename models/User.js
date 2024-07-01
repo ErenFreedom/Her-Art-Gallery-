@@ -1,4 +1,3 @@
-// /models/User.js
 import mongoose from 'mongoose';
 import CryptoJS from 'crypto-js';
 
@@ -8,6 +7,7 @@ const UserSchema = new mongoose.Schema({
   password: { type: String, required: true },
   twitterHandle: { type: String, required: false },
   nsfwAccess: { type: Boolean, default: false },
+  verified: { type: Boolean, default: false },
 }, { timestamps: true });
 
 // Method to compare passwords
