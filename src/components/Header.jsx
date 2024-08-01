@@ -13,7 +13,7 @@ const Header = ({ hideAuthLinks, showSlider }) => {
     <>
       <header className={styles.header}>
         <div className={styles.logo}>
-          <Link href="/">Arte di Anna</Link>
+          <Link href="/">Arte di Sandy</Link>
         </div>
         <nav className={styles.nav}>
           <Link href="/dashboard" className={router.pathname === '/dashboard' ? styles.active : ''}>Gallery</Link>

@@ -7,7 +7,7 @@ const LoginHeader = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Link href="/">Arte di Anna</Link>
+        <Link href="/">Arte di Sandy</Link>
       </div>
       <nav className={styles.nav}>
         <Link href="/" className={router.pathname === '/' ? styles.active : ''}>Home</Link>
