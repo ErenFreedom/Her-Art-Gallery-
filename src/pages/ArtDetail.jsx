@@ -1,21 +1,31 @@
-// src/pages/ArtDetail.jsx
 import React from 'react';
 import styles from '../styles/ArtDetail.module.css';
 import { FaHeart, FaShareAlt, FaEye, FaComment } from 'react-icons/fa';
 
 const ArtDetail = ({ art }) => {
+  if (!art) {
+    return (
+      <div className={styles.container}>
+        <h1>Art Detail</h1>
+        <p>No art details available.</p>
+      </div>
+    );
+  }
+
+  const { imageUrl, title, description, viewers = [] } = art;
+
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <img src={art.imageUrl} alt={art.title} />
+        {imageUrl ? <img src={imageUrl} alt={title} /> : <p>No image available</p>}
       </div>
       <div className={styles.detailsContainer}>
-        <h1>{art.title}</h1>
-        <p>{art.description}</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
         <div className={styles.actions}>
           <button className={styles.iconButton}><FaHeart /> Like</button>
           <button className={styles.iconButton}><FaShareAlt /> Share</button>
-          <span className={styles.views}><FaEye /> {art.viewers.length} views</span>
+          <span className={styles.views}><FaEye /> {viewers.length} views</span>
         </div>
         <div className={styles.comments}>
           <h2>Comments</h2>
