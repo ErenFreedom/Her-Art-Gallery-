@@ -20,3 +20,58 @@
   width: 50%;
   margin: 2rem 0;
 }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.25rem;
+  }
+
+  .maintenanceImage img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .maintenanceImage img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 0.875rem;
+  }
+
+  .maintenanceImage img {
+    width: 90%;
+  }
+}

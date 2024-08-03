@@ -86,3 +86,34 @@
 .views svg {
   margin-right: 4px;
 }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .artCard {
+    font-size: 0.875rem;
+  }
+
+  .iconButton {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .artCard {
+    font-size: 0.75rem;
+  }
+
+  .iconButton {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .artCard {
+    font-size: 0.625rem;
+  }
+
+  .iconButton {
+    font-size: 0.625rem;
+  }
+}

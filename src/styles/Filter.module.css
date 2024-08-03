@@ -39,3 +39,40 @@
 .dropdownMenu button:hover {
   background-color: #f1f1f1;
 }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .filterButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .dropdownMenu button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filterButton {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .dropdownMenu button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filterButton {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+
+  .dropdownMenu button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}

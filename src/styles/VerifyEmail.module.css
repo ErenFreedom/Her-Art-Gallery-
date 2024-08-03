@@ -22,3 +22,34 @@
   color: #555;
   margin-top: 1rem;
 }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.75rem;
+  }
+
+  .paragraph {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .paragraph {
+    font-size: 0.85rem;
+  }
+}

@@ -123,3 +123,86 @@
   color: #9F2B68; /* Purple girly color */
   text-align: center;
 }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .formContainer {
+    width: 80%;
+  }
+
+  .formContainer h1 {
+    font-size: 2rem;
+  }
+
+  .formContainer button {
+    width: 70%;
+    font-size: 0.9rem;
+  }
+
+  .formContainer input {
+    font-size: 0.9rem;
+  }
+
+  .signInText {
+    font-size: 1rem;
+  }
+
+  .imageContainer {
+    display: none; /* Hide the image container on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    width: 90%;
+  }
+
+  .formContainer h1 {
+    font-size: 1.75rem;
+  }
+
+  .formContainer button {
+    width: 80%;
+    font-size: 0.85rem;
+  }
+
+  .formContainer input {
+    font-size: 0.85rem;
+  }
+
+  .signInText {
+    font-size: 0.95rem;
+  }
+
+  .imageContainer {
+    display: none; /* Hide the image container on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .formContainer {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .formContainer h1 {
+    font-size: 1.5rem;
+  }
+
+  .formContainer button {
+    width: 90%;
+    font-size: 0.75rem;
+  }
+
+  .formContainer input {
+    font-size: 0.75rem;
+  }
+
+  .signInText {
+    font-size: 0.9rem;
+  }
+
+  .imageContainer {
+    display: none; /* Hide the image container on smaller screens */
+  }
+}

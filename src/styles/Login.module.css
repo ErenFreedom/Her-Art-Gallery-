@@ -92,3 +92,77 @@
   margin-top: 2rem; /* Increase margin for more spacing */
   font-size: 1.4rem; /* Increase font size */
 }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .formContainer {
+    width: 80%;
+  }
+
+  .formContainer h1 {
+    font-size: 1.25rem;
+  }
+
+  .formContainer button {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .forgotPassword,
+  .signUp {
+    font-size: 0.8rem;
+  }
+
+  .signUp {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    width: 90%;
+  }
+
+  .formContainer h1 {
+    font-size: 1rem;
+  }
+
+  .formContainer button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .forgotPassword,
+  .signUp {
+    font-size: 0.75rem;
+  }
+
+  .signUp {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .formContainer {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .formContainer h1 {
+    font-size: 0.875rem;
+  }
+
+  .formContainer button {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+
+  .forgotPassword,
+  .signUp {
+    font-size: 0.75rem;
+  }
+
+  .signUp {
+    font-size: 0.875rem;
+  }
+}

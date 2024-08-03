@@ -1,4 +1,3 @@
-/* src/styles/ArtDetail.module.css */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 .container {
@@ -104,4 +103,39 @@
 
 .commentButton:hover {
   background-color: #ff1493;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageContainer {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .detailsContainer h1,
+  .detailsContainer p,
+  .comments h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .detailsContainer h1,
+  .detailsContainer p,
+  .comments h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .detailsContainer h1,
+  .detailsContainer p,
+  .comments h2 {
+    font-size: 1rem;
+  }
 }
